@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/goit-advancedjs-hw-02/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Promise Generator</title>
+    <script type="module" crossorigin src="/goit-advancedjs-hw-02/2-snackbar.js"></script>
+    <link rel="modulepreload" crossorigin href="/goit-advancedjs-hw-02/assets/modulepreload-polyfill-B5Qt9EMX.js">
+    <link rel="modulepreload" crossorigin href="/goit-advancedjs-hw-02/assets/vendor-BZoxUzx5.js">
+    <link rel="stylesheet" crossorigin href="/goit-advancedjs-hw-02/assets/vendor-DRAOUfWK.css">
+    <link rel="stylesheet" crossorigin href="/goit-advancedjs-hw-02/assets/styles-BT3iqmIb.css">
+  </head>
+  <body>
+    <main class="task-page promise-page">
+      <section class="task-shell form-shell">
+        <a class="back-link" href="./index.html">Back</a>
+        <div class="task-header">
+          <p class="eyebrow">Task 02</p>
+          <h1 class="page-title">Promise Generator</h1>
+        </div>
+        <form class="form">
+          <label class="form-label">
+            Delay (ms)
+            <input class="form-input" type="number" name="delay" min="1" step="1" required />
+          </label>
+          <fieldset class="state-fieldset">
+            <legend>State</legend>
+            <label class="radio-card">
+              <input type="radio" name="state" value="fulfilled" required />
+              <span class="radio-mark"></span>
+              <span>
+                <span class="radio-title">Fulfilled</span>
+                <span class="radio-text">Resolve the promise after the delay</span>
+              </span>
+            </label>
+            <label class="radio-card">
+              <input type="radio" name="state" value="rejected" required />
+              <span class="radio-mark"></span>
+              <span>
+                <span class="radio-title">Rejected</span>
+                <span class="radio-text">Reject the promise after the delay</span>
+              </span>
+            </label>
+          </fieldset>
+          <button class="primary-button form-button" type="submit">Create notification</button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
